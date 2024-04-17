@@ -12,7 +12,21 @@ import { MatSliderModule } from '@angular/material/slider';
 import { UsersComponent } from './users/users.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { AdminListComponent } from './admin-list/admin-list.component';
-import { LazyloadingcomponentComponent } from './lazyloadingcomponent/lazyloadingcomponent.component'
+import { LazyloadingcomponentComponent } from './lazyloadingcomponent/lazyloadingcomponent.component';
+import { RicheditComponent } from './richedit/richedit.component'
+import { HttpClientModule } from '@angular/common/http';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import {  NgxExtendedPdfViewerModule} from 'ngx-extended-pdf-viewer';
+import { PdfviewerComponent } from './pdfviewer/pdfviewer.component';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
+import { RichedithomeComponent } from './richedithome/richedithome.component';
+import { TestngxextendedpdfviewerComponent } from './testngxextendedpdfviewer/testngxextendedpdfviewer.component';
+import { FormlyvalidationComponent } from './formlyvalidation/formlyvalidation.component';
+import { FormlyModule } from '@ngx-formly/core';
+import { FormlyMaterialModule} from '@ngx-formly/material';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +36,16 @@ import { LazyloadingcomponentComponent } from './lazyloadingcomponent/lazyloadin
     UsersComponent,
     UserListComponent,
     AdminListComponent,
-    LazyloadingcomponentComponent
+    LazyloadingcomponentComponent,
+    RicheditComponent,
+    PdfviewerComponent,
+    NavComponent,
+    HomeComponent,
+    RichedithomeComponent,
+    TestngxextendedpdfviewerComponent,
+    FormlyvalidationComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +54,13 @@ import { LazyloadingcomponentComponent } from './lazyloadingcomponent/lazyloadin
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    PdfViewerModule,
+    NgxExtendedPdfViewerModule,
+    FormlyModule.forRoot(),
+    FormlyMaterialModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

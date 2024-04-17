@@ -1,1 +1,20 @@
+<p>Angular Form</p>
 <p>Userss login works!</p>
+<div class="col-sm-6">
+    <form #userForm="" (ngSubmit)="onSubmit(userForm)">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" name="useremail" ngModel email="ngModel"
+           placeholder="Enter email" >
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control"  name="password" ngModel
+          placeholder="Enter password" >
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+       
+      </form>
+</div>

@@ -1,0 +1,19 @@
+<p>formlyvalidation works!</p>
+<div class="center">
+    <div class="row">
+        <div class="col-sm-4">
+            <form [formGroup]="contactForm" (ngSubmit)="SubmitForm(contactModel)">
+                <formly-form  [model]="contactModel" [fields]="contactFields" [form]="contactForm">
+
+                    
+                </formly-form>
+                <button [disabled]="contactForm.invalid" type="submit" class="btn-btn-primary"
+                mat-raised-button>Submit form</button>
+            </form>
+        </div>
+        <div>
+            <pre>Contact: {{contactModel | json}}</pre>
+            <pre>Form is valid: {{contactForm.valid?'Yes':'No'}}</pre>
+        </div>
+    </div>
+</div>

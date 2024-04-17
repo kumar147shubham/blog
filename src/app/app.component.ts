@@ -1,6 +1,5 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators} from '@angular/forms';
+
 
 
 @Component({
@@ -10,9 +9,8 @@ import { FormControl, FormGroup, Validators} from '@angular/forms';
 })
 
 export class AppComponent {
-  title="Child to Parent communication";
+  title="RichEdit Exercise";
   
-  onSubmit(data: any){
-    console.warn(data.value);
-  }
+
+
 }
