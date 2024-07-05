@@ -15,7 +15,7 @@ export class PdfviewerComponent {
 
   pdfSrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
 
-
+  pdfSrcright = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"; //"C:/Data/e-Nomination.pdf";
   // Base64ToBlob(bdata, contenttype='', sliceSize=512){
   //   const byteCharactors = atob(bdata);
   //   const byteArrays =[];
